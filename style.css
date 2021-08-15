@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header{
+    background-image:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(./images/bg-pattern-intro.svg);
+    background-repeat: no-repeat;
+    background-blend-mode:saturation;
+    background-position: left;
+    height:600px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding:60px 200px 0;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo label:nth-child(2){
+    display: none;
+}
+
+nav ul{
+    flex-basis: 85%;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    margin:0 5px;
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 40px;
+    opacity: 0.7;
+    text-decoration: none;
+    padding:8px 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+nav ul ul{
+    position: absolute;
+    transition: all .2s;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    color: black;
+    padding: 20px;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin:10px 0;
+    display: list-item;
+    float: none;
+    opacity: 0.7;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+nav ul ul li:hover{
+    opacity: 1;
+}
+
+.arrow-img{
+    transition: all 0.2s;
+}
+
+nav ul li:hover .arrow-img{
+    transform:rotate(180deg);
+}
+
+.login-signup{
+    display:flex;
+    justify-self: flex-end;
+    float: right;
+}
+  
+.login-signup p{
+    padding: 10px 40px;
+    border-radius:30px;
+    transition: all 0.2s;
+    cursor: pointer;
+    color: rgb(202, 202, 202);
+}
+
+.login-signup p:nth-child(2){
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+}
+
+.login-signup p:hover{
+    background-color: hsl(355, 100%, 74%);
+}
+
+.show, .logo input, .chk{
+    display: none;
+}
+
+.logo label{
+    cursor: pointer;
+}
+
+.header-text-container{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header-text-container h1{
+    font-size: 4em;
+}
+
+.header-text-container p{
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+.header-btn{
+    margin-top: 50px;
+}
+
+.header-btn button{
+    border: none;
+    width: 150px;
+    padding: 15px 10px;
+    border-radius:30px;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.header-btn button:nth-child(1){
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    margin-right: 20px;
+    transition: all 0.2s;
+}
+
+.header-btn button:nth-child(1):hover{
+    background-color: hsl(356, 100%, 66%);
+    color: white;
+}
+
+.header-btn button:nth-child(2){
+    background-color: rgb(255, 92, 92);
+    color: white;
+    border: solid 1px white;
+}
+
+.header-btn button:nth-child(2):hover{
+    background-color: white;
+    color: rgb(255, 92, 92);
+}
+
+/* MAIN */
+main{
+    padding: 100px 0 0 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.article-1{
+    overflow:hidden;
+}
+
+.article-1 h1{
+    text-align: center;
+    font-size:2.5em ;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 100px;
+}
+
+.article-1 img{
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+    float: right;
+    width: auto;
+}
+
+.content{
+    padding:50px 0 0 200px;
+    width: 60%;
+}
+
+.content h2{
+    font-size:2em ;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 50px;
+}
+
+.article-2{
+    background:linear-gradient(to right, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding: 0 200px 0 150px;
+    height: 400px;
+    margin-top: 4rem;
+}
+
+.article-2 img{
+    position: relative;
+    top:-30% ;
+    width: 50%;
+    float: left;
+}
+
+.article-2 div{
+    width: 50%;
+    float:right ;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.article-2 div h1{
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.article-2 div p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: hsl(0, 0%, 90%);
+}
+
+.clear{
+    clear: both;
+}
+
+.article-3{
+    overflow: auto;
+}
+
+.article-3 img{
+    float: left;
+    width: 50%;
+    position: relative;
+    right: 18rem;
+    bottom: 10rem;
+}
+
+.content-3{
+    width: 50%;
+    padding: 0 200px 0 0;
+    float: right;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    color: hsl(240, 2%, 79%);
+    padding: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    position: relative;
+}
+
+footer div, footer ul{
+    flex-basis: 25%;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer ul li:not(.strong){
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+footer ul li:hover:not(.strong){
+    text-decoration: underline;
+}
+
+.strong{
+    list-style: none;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* COPYRIGHT */
+#copyright{
+    position: absolute;
+    right: 50%;
+    top: 90%;
+    transform: translateX(10%);
+}
+
+
+@media all and (max-width : 1300px) {
+    header{
+        background-size: 250%;
+        background-position:50% ;
+        height: fit-content;
+        padding-bottom: 4rem;
+    }
+
+    nav{
+        justify-content:space-between;
+        flex-direction: column;
+        padding:60px 20px 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo label:nth-child(2){
+        display: initial;
+    }
+
+    nav ul{
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top:60px;
+        position: absolute;
+        z-index: 1;
+        width: 94%;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul{
+        position: static;
+        float: none;
+        display: none;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+        background-color: gainsboro;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    nav ul ul li{
+        text-align: center;
+        opacity: 0.5;
+    }
+
+    .show{
+        font-size: 1.2em;
+        display: block;
+        opacity: 0.5;
+        transition: all 0.2s;
+        cursor: pointer;
+        color: black;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .show:hover{
+        opacity: 1;
+    }
+
+    [id^=btn]:checked ~ ul{
+        display: block;
+    }
+
+    .arrow-img-blck{
+        transition: all 0.2s;
+    }
+
+    [id^=btn]:checked ~ .show .arrow-img-blck{
+        transform:rotate(180deg);
+    }
+
+    .login-signup{
+        flex-direction: column;
+        width: 100%;
+        border-top: solid rgb(177, 176, 176) 1px;
+        margin-top: 20px;
+        padding-top:10px
+    }
+      
+    .login-signup p{
+        width:150px;
+        text-align: center;
+        color: black;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    
+    .login-signup p:nth-child(1){
+        color: black;
+        opacity: 0.5;
+    }
+
+    .login-signup p:nth-child(2){
+        background: linear-gradient(to right ,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: white;
+    }
+
+    .header-text-container{
+        padding: 0 20px;
+    }
+
+    /* MAIN */
+    .article-1 img{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content{
+        text-align: center;
+        padding:0 20px;
+        width: 100%;
+    }
+
+    .content h2{
+        font-size: 2em;
+    }
+
+    .article-2{
+        background:linear-gradient(to top, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+        padding: 0 20px 10rem;
+        height: fit-content;
+        position: relative;
+        margin-top: 10rem;
+    }
+
+    .article-2 img{
+        width: 100%;
+        top: -5rem;
+        float: none;
+    }
+
+    .article-2 div{
+        width: 100%;
+        float:none ;
+        text-align: center;
+        top: 0%;
+        transform: translateY(0%);
+    }
+
+    .article-3{
+        margin: 10rem 20px;
+    }
+
+    .article-3 img{
+        width: 100%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 5rem;
+        flex-direction: column;
+    }
+    
+    footer div{
+        margin-bottom: 5rem;
+    }
+
+    footer ul{
+        margin: 1.5rem 0;
+    }
+
+    footer ul li{
+        text-align: center;
+    }
+
+    #copyright{
+        position: static;
+        right: 0;
+        top: 0;
+        transform: translateX(0);
+        text-align: center;
+    }
+}

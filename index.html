@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Frontend Mentor | Blogr landing page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div>
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+                <label for="btn">
+                    <img src="./images/icon-hamburger.svg" alt="hamburger-icon" id="hamburgerIcon">
+                </label>
+                <input type="checkbox" id="btn">
+            </div>
+    
+            <ul id="ul">
+                <li>
+                    <a>Product <img class="arrow-img" src="./images/icon-arrow-light.svg" alt="icon arrow"></a>
+                    <input type="checkbox" id="btn-1" class="chk">
+                    <label for="btn-1" class="show">Product <img class="arrow-img-blck" src="./images/icon-arrow-dark.svg" alt="icon arrow dark"> </label>
+                    <ul>
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <a>Company <img class="arrow-img" src="./images/icon-arrow-light.svg" alt="icon arrow"></a>
+                    <input type="checkbox" id="btn-2" class="chk">
+                    <label for="btn-2" class="show">Company <img class="arrow-img-blck" src="./images/icon-arrow-dark.svg" alt="icon arrow dark"> </label>
+                    <ul>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a>Connect <img class="arrow-img" src="./images/icon-arrow-light.svg" alt="icon arrow"></a>
+                    <input type="checkbox" id="btn-3" class="chk">
+                    <label for="btn-3" class="show">Connect <img class="arrow-img-blck" src="./images/icon-arrow-dark.svg" alt="icon arrow dark"> </label>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </li>
+
+                <div class="login-signup">
+                    <p>Login</p>
+                    <p>sign Up</p>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header-text-container">
+            <h1>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+            <div class="header-btn">
+                <button>Starts For Free</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="article-1">
+            <h1>Designed for the future</h1>
+
+            <img src="./images/illustration-editor-desktop.svg" alt="ilusstration editor" id="ilustratorEditorMobile">
+
+            <div class="content">
+                <h2>Introducing an extensible editor</h2>
+                <p>Introducing an extensible editor
+                    Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                    change the looks of a blog.
+                </p>
+            </div>
+
+            <div class="content">
+                <h2>Robust content management</h2>
+                <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                </p>
+            </div>
+        </article>
+
+        <article class="article-2">
+            <img src="./images/illustration-phones.svg" alt="ilusstration phone">
+
+            <div class="content-2">
+                <h1>State of the Art Infrastructure</h1>
+                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+            </div>
+        </article>
+
+        <div class="clear"></div>
+
+        <article class="article-3">
+            <img src="./images/illustration-laptop-desktop.svg" alt="ilusstration laptop" id="ilusstrationLaptopDekstop">
+
+            <div class="content content-3">
+                <h2>Free, open, simple</h2>
+                <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                </p>
+            </div>
+
+            <div class="content content-3">
+                <h2>Powerful tooling</h2>
+                <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                    capable of producing even the most complicated sites.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+        <ul>
+            <li class="strong"> Product</li>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+        </ul>
+        <ul>
+            <li class="strong">Company</li>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+        </ul>
+        <ul>
+            <li class="strong">Connect</li>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+        </ul>
+        <p id="copyright">Copyright &copy; Danar</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
